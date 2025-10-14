@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Student {
+private:
+string name;
+int age;
+public:
+Student(string n, int a) {
+name = n;
+age = a;
+cout << "Constructor called for " << name << endl;
+}
+~Student() {
+cout << "Destructor called for " << name << endl;
+}
+void display() {
+cout << "Name: " << name << ", Age: " << age << endl;
+}
+};
+int main() {
+string n;
+int a;
+cout << "Enter student name: ";
+getline(cin, n); 
+cout << "Enter student age: ";
+cin >> a;
+Student s1(n, a);
+s1.display();
+cout << "End of program.\n";
+return 0;
+}
