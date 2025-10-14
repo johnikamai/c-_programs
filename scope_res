@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int my_variable = 19;
+int main()
+{
+ int my_variable = 30;
+ cout << "Value of global my_variable is " << ::my_variable << endl;
+ut << "Value of local my_variable is " << my_variable << endl;
+ return 0;
